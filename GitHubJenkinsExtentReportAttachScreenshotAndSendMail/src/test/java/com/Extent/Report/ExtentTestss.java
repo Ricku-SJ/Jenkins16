@@ -19,6 +19,8 @@ public void create()
 	test.log(Status.PASS, "This executed properly")
 	.pass("This accept all inputs")
 	.info("This is a info msg");
+	
+	
 }
 @Test
 public void modify() throws IOException
@@ -27,7 +29,9 @@ public void modify() throws IOException
 	ExtentTest test=extent.createTest("This a login test");
 	test.log(Status.FAIL, "This didn'texecute properly")
 	.fail("This didn't accept all inputs")
-	.info("This is a info msg");
+	.info("This is a info msg")
+	.warning("Password alert displaying");
+	
 	//Desktop.getDesktop().browse(new File("MyExtentReport.html").toURI());
 }
 }
